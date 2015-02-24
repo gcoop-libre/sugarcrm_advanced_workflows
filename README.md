@@ -9,7 +9,7 @@ The original customer was Banco Credicoop Cooperativo Limitado of Argentina
 
 About the engine
 -----------------
-This workflow engine is inspired by Sebastian Bergman ["Design and Implementation of Workflow Engine" paper].(http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.85.5476&rep=rep1&type=pdf)
+This workflow engine is inspired by Sebastian Bergman ["Design and Implementation of Workflow Engine" paper.](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.85.5476&rep=rep1&type=pdf)
 
 About the code
 ---------------
