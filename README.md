@@ -4,6 +4,9 @@ Advanced Workflows
 This engine was developed by **Gcoop Cooperativa LTDA** 
 The original customer was Banco Credicoop Cooperativo Limitado of Argentina
 
+
+![Screenshot](https://github.com/gcoop-libre/sugarcrm_advanced_workflows/blob/master/screenshot.jpg "Advanced Workflows")
+
 About the engine
 -----------------
 This workflow engine is inspired by Sebastian Bergman "Design and Implementation of Workflow Engine" paper.
