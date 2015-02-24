@@ -1,0 +1,29 @@
+<?php
+require_once "modules/SecurityGroups/SecurityGroup.php";
+
+class AsignarGrupo extends WorkflowBaseAction
+{
+    public $nombre = "Asignar al Grupo";
+    public $tipo = 'action';
+
+    public function ejecutar($focus, $string_parametros)
+    {
+        $this->procesar_parametros($string_parametros);
+
+        $focus->eliminar_de_todos_los_grupos();
+        $grupo = new SecurityGroup();
+        $grupo->retrieve_by_string_fields(array("name" => $this->nombre));
+        $grupo->addGroupToRecord($focus->module_dir, $focus->id, $grupo->id);
+        $message = "Gestión asignada a grupo: '$this->nombre'\n";
+        if (method_exists($focus, 'notificar'))
+        {
+            $focus->notificar( $message, "Cambio de Grupo" );
+      }
+    }
+   public function parametros_requeridos()
+   {
+        return array("nombre");
+   }
+}
+
+?>
